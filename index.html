@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air5Venture: Pixel Artist Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <style>
+    .zoom {
+        animation-name: zoom;
+        animation-duration: 2s;
+    }
+
+    @keyframes zoom {
+        from { width: 20%, height: auto }
+        to { width: 30%, height: auto }
+    }
+
+   .hover1:hover {
+    background-color: goldenrod;
+   }
+     .hover2:hover {
+    background-color: darkviolet;
+   }
+</style>
 </head>
 <body class="font-sans">
     <!-- Header -->
@@ -18,8 +35,8 @@
 
     <!-- About Section -->
     <section id="about" style="background-color: darkgoldenrod;" class="py-12"> 
-    <img style="width: 30%; height: auto; margin: auto; margin-top: 40px; border-radius: 100%; border: 5px solid #000;" src="https://cdnb.artstation.com/p/assets/images/images/045/732/839/smaller_square/xiao-tong-kong-lny-2022.jpg?1643388063" alt="Jackie Kim Image">
-         <div style="border-radius: 20px;" class="container bg-yellow-500 mx-auto px-4">
+    <img class="zoom" style="width: 30%; height: auto; margin: auto; margin-top: 40px; border-radius: 100%; border: 5px solid #000;" src="https://cdnb.artstation.com/p/assets/images/images/045/732/839/smaller_square/xiao-tong-kong-lny-2022.jpg?1643388063" alt="Jackie Kim Image">
+         <div style="border-radius: 20px;" class="container hover1 bg-yellow-500 mx-auto px-4">
         <h1 class="text-3xl font-bold text-gray-800">Jackie Kim (About Me):</h1>
         <p class="text-lg text-gray-700">Hi, I'm Jackie Kim, I make very awesome pixel art pictures.
         I make my pixel art with cartoony styles but I also do other styles such as spooky themes and much more. I have been hired by Air5Venture to make pixel art for part-time and for a decent price. I thank Pizogis creator of Air5Venture for hiring me. My time here is great so far. Me and Pizogis are currently working on a secret game project. This won't be published until I get my sprite work done I'm currently trying to work on school so it will be some time thank you. Here's Pizogis.</p>
@@ -43,7 +60,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" style="background-color: purple;" class="py-12">
+    <section id="projects" style="background-color: purple;" class="hover2 py-12">
         <div class="container mx-auto px-4">
             <h2 style="color: white;" class="text-2xl font-bold text-gray-800 mb-6">Game Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
